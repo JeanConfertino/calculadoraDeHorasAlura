@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Dias</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Calculadora de Horas Alura 2024</h1>
+
+    <!-- DADOS DO 1° QUADRIMESTRE -->
+    <div class="quadrimestre" id="quadrimestre1">
+        <h2>1° quadrimestre</h2>
+        <h3>Este quadrimestre inclui novembro, dezembro, janeiro e fevereiro 
+            <br>
+            DATA FINAL DO QUADRIMESTE
+        </h3>
+
+        <label for="dataInicial1">Dia da liberação de licença:</label>
+        <input type="date" id="dataInicial1" class="inputData">
+
+
+        <p id="resultado1" class="resultado"></p>
+        <p id="mensagemErro1" class="mensagemErro"></p>
+        <button onclick="calcularDias(1, '2024-02-29')" class="calcularButton">Calcular</button>
+    </div>
+
+    <!-- DADOS DO 2° QUADRIMESTRE -->
+    <div class="quadrimestre" id="quadrimestre2">
+        <h2>2° quadrimestre</h2>
+        <h3>Este quadrimestre inclui março, abril, maio e junho
+            <br>
+            DATA FINAL DO QUADRIMESTE
+        </h3>
+
+        <label for="dataInicial2">Dia da liberação de licença:</label>
+        <input type="date" id="dataInicial2" class="inputData">
+
+        <p id="resultado2" class="resultado"></p>
+        <p id="mensagemErro2" class="mensagemErro"></p>
+        <button onclick="calcularDias(2, '2024-06-30')" class="calcularButton">Calcular</button>
+    </div>
+
+    <!-- DADOS DO 3° QUADRIMESTRE -->
+    <div class="quadrimestre" id="quadrimestre3">
+        <h2>3° quadrimestre</h2>
+        <h3>Este quadrimestre inclui julho, agosto, setembro e outubro
+            <br>
+            DATA FINAL DO QUADRIMESTE
+        </h3>
+
+        <label for="dataInicial3">Dia da liberação de licença:</label>
+        <input type="date" id="dataInicial3" class="inputData">
+
+        <p id="resultado3" class="resultado"></p>
+        <p id="mensagemErro3" class="mensagemErro"></p>
+        <button onclick="calcularDias(3, '2024-10-30')" class="calcularButton">Calcular</button>
+    </div>
+
+    <footer>
+        <p>Rodapé</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
