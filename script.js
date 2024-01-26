@@ -39,5 +39,5 @@ function calcularDias(quadrimestre, dataFinalStr) {
         horas = 32;
     }
 
-    document.getElementById('resultado' + quadrimestre).innerHTML = 'Você possui ' + dias + ' dias de utilização Alura nesse quadrimestre vigente, é necessário ter ' + horas + ' horas de cursos realizados.';
+    document.getElementById('resultado' + quadrimestre).innerHTML = 'Restam ' + dias + ' dias para o final do quadrimestre. Você precisará cumprir com ' + horas + ' horas de cursos finalizados dentro da plataforma Alura.';
 }
