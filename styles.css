@@ -1,0 +1,75 @@
+/*URL fonte*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+
+/* Reset de margin e padding para o corpo da página */
+body {
+    font-family: "Montserrat", sans-serif; 
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para o cabeçalho */
+header {
+    background-color: #1a237e; /* Azul escuro */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+/* Contêiner flexível para os quadrimestres */
+.quadrimestres-container {
+    display: flex;
+    justify-content: space-around; /* ou space-between, dependendo da preferência */
+    flex-wrap: wrap;
+}
+
+/* Estilo para os quadrimestres */
+.quadrimestre {
+    width: calc(33.33% - 20px); /* 33.33% para cada quadrimestre com 20px de espaço entre eles */
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #3949ab; /* Azul escuro mais claro */
+    box-sizing: border-box; /* Adicione isso para corrigir possíveis problemas de layout */
+    border-radius: 10px; /* Adicione esta propriedade para bordas mais arredondadas */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza conteúdo verticalmente */
+}
+
+/* Estilo para os inputs e labels dentro dos quadrimestres */
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.inputData {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.resultado, .mensagemErro {
+    margin-top: 10px;
+}
+
+.calcularButton {
+    background-color: #1565c0; /* Azul escuro mais intenso */
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; /* Adicione esta propriedade para bordas mais arredondadas */
+    align-self: center; /* Centraliza horizontalmente */
+}
+
+/* Estilo para o rodapé */
+footer {
+    background-color: #1a237e; /* Azul escuro */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Adicione mais estilos conforme necessário */
