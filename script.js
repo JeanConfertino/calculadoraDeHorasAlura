@@ -39,5 +39,5 @@ function calcularDias(quadrimestre, dataFinalStr) {
         horas = 32;
     }
 
-    document.getElementById('resultado' + quadrimestre).innerHTML = 'Restam ' + dias + ' dias para o final do quadrimestre. Você precisará cumprir com ' + horas + ' horas de cursos finalizados dentro da plataforma Alura.';
+    document.getElementById('resultado' + quadrimestre).innerHTML = '[ERROR]' + dias + ' dias para o final do quadrimestre. Você precisará cumprir com ' + horas + ' horas de cursos finalizados dentro da plataforma Alura.';
 }
