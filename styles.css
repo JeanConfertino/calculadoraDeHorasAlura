@@ -3,7 +3,7 @@
 /* Reset de margin e padding para o corpo da página */
 body {
     background-image: url('fundo_alura.jpg');
-    font-family: 'Inter', sans-serif; 
+    font-family: Arial, sans-serif;
     color: #fff;
     margin: 0;
     padding: 0;
@@ -14,7 +14,7 @@ header {
     color: #ffffff;
     text-align: center;
     padding: 20px 0;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 /* Contêiner flexível para os quadrimestres */
@@ -26,9 +26,9 @@ header {
 
 /* Estilo para os quadrimestres */
 .quadrimestre {
-    width: calc(33.33% - 20px); /* 33.33% para cada quadrimestre com 20px de espaço entre eles */
+    width: calc(33.33% - 15px); /* 33.33% para cada quadrimestre com 15px de espaço entre eles */
     margin-bottom: 2px;
-    padding: 20px;
+    padding: 15px;
     border: 1px solid #3949ab; /* Azul escuro mais claro */
     box-sizing: border-box; /* Adicione isso para corrigir possíveis problemas de layout */
     border-radius: 15px; /* Adicione esta propriedade para bordas mais arredondadas */
