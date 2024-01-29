@@ -1,82 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Definição do tipo de documento e configurações meta -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da página e link para o arquivo CSS -->
     <title>Calculadora Alura SIS</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Cabeçalho -->
-<div>
-    <header>
-        <h2>Calculadora de Horas Alura 2024</h2>
-    </header>
-</div>
-<div class="quadrimestres-container">
-    <!-- DADOS DO 1° QUADRIMESTRE -->
-    <div class="quadrimestre" id="quadrimestre1">
-        <h2>1° quadrimestre</h2>
-        <h3>Este quadrimestre inclui os meses de novembro, dezembro, janeiro e fevereiro</h3>
-        <h4><p>O último dia do quadrimeste é <strong>29/02/2023</strong></p></h4>
+    <!-- Cabeçalho da página -->
+    <div>
+        <header>
+            <!-- Título da calculadora -->
+            <h3>Calculadora SIS de Horas Alura 2024</h3>
+        </header>
+    </div>
+    <!-- Container para os quadrimestres -->
+    <div class="quadrimestres-container">
+        <!-- Quadrimestre 1 -->
+        <div class="quadrimestre" id="quadrimestre1">
+            <!-- Título e informações do quadrimestre -->
+            <h3>1° quadrimestre</h3>
+            <h4>Este quadrimestre inclui novembro, dezembro, janeiro e fevereiro sendo considerado que iniciou em 01/11/2023 e o último dia do é 29/02/2023</h4>
 
-        <!-- Input para a data inicial do 1° quadrimestre -->
-        <label for="dataInicial1">Selecione a data em que sua licença foi liberada:</label>
-        <input type="date" id="dataInicial1" class="inputData">
+            <!-- Input para a data inicial do 1° quadrimestre -->
+            <label for="dataInicial1">Selecione a data em que sua licença foi liberada/ renovada:</label>
+            <input type="date" id="dataInicial1" class="inputData">
 
-        <!-- Resultado e mensagem de erro do 1° quadrimestre -->
-        <p id="resultado1" class="resultado"></p>
-        <p id="mensagemErro1" class="mensagemErro"></p>
+            <!-- Resultado e mensagem de erro do 1° quadrimestre -->
+            <p id="resultado1" class="resultado"></p>
+            <p id="mensagemErro1" class="mensagemErro"></p>
 
-        <!-- Botão para calcular os dias do 1° quadrimestre -->
-        <button onclick="calcularDias(1, '2024-02-29')" class="calcularButton">Calcular</button>
+            <!-- Botão para calcular os dias do 1° quadrimestre -->
+            <button onclick="calcularDias(1, '2024-02-29')" class="calcularButton">Calcular</button>
+        </div>
+
+        <!-- Quadrimestre 2 -->
+        <div class="quadrimestre" id="quadrimestre2">
+            <!-- Título e informações do quadrimestre -->
+            <h3>2° quadrimestre</h3>
+            <h4>Este quadrimestre inclui março, abril, maio e junho sendo considerado que iniciou em 01/11/2023 e o último dia do é 29/02/2023</h4>
+
+            <!-- Input para a data inicial do 2° quadrimestre -->
+            <label for="dataInicial2">Selecione a data em que sua licença foi liberada/ renovada:</label>
+            <input type="date" id="dataInicial2" class="inputData">
+
+            <!-- Resultado e mensagem de erro do 2° quadrimestre -->
+            <p id="resultado2" class="resultado"></p>
+            <p id="mensagemErro2" class="mensagemErro"></p>
+
+            <!-- Botão para calcular os dias do 2° quadrimestre -->
+            <button onclick="calcularDias(2, '2024-06-30')" class="calcularButton">Calcular</button>
+        </div>
+
+        <!-- Quadrimestre 3 -->
+        <div class="quadrimestre" id="quadrimestre3">
+            <!-- Título e informações do quadrimestre -->
+            <h3>3° quadrimestre</h3>
+            <h4>Este quadrimestre inclui julho, agosto, setembro e outubro sendo considerado que iniciou em 01/11/2023 e o último dia do é 29/02/2023</h4>
+
+            <!-- Input para a data inicial do 3° quadrimestre -->
+            <label for="dataInicial3">Selecione a data em que sua licença foi liberada/ renovada:</label>
+            <input type="date" id="dataInicial3" class="inputData">
+
+            <!-- Resultado e mensagem de erro do 3° quadrimestre -->
+            <p id="resultado3" class="resultado"></p>
+            <p id="mensagemErro3" class="mensagemErro"></p>
+
+            <!-- Botão para calcular os dias do 3° quadrimestre -->
+            <button onclick="calcularDias(3, '2024-10-30')" class="calcularButton">Calcular</button>
+        </div>
     </div>
 
-    <!-- DADOS DO 2° QUADRIMESTRE -->
-    <div class="quadrimestre" id="quadrimestre2">
-        <h2>2° quadrimestre</h2>
-        <h3>Este quadrimestre inclui março, abril, maio e junho
-            <br>
-            DATA FINAL DO QUADRIMESTRE
-        </h3>
-
-        <!-- Input para a data inicial do 2° quadrimestre -->
-        <label for="dataInicial2">Dia da liberação de licença:</label>
-        <input type="date" id="dataInicial2" class="inputData">
-
-        <!-- Resultado e mensagem de erro do 2° quadrimestre -->
-        <p id="resultado2" class="resultado"></p>
-        <p id="mensagemErro2" class="mensagemErro"></p>
-
-        <!-- Botão para calcular os dias do 2° quadrimestre -->
-        <button onclick="calcularDias(2, '2024-06-30')" class="calcularButton">Calcular</button>
-    </div>
-
-    <!-- DADOS DO 3° QUADRIMESTRE -->
-    <div class="quadrimestre" id="quadrimestre3">
-        <h2>3° quadrimestre</h2>
-        <h3>Este quadrimestre inclui julho, agosto, setembro e outubro
-            <br>
-            DATA FINAL DO QUADRIMESTRE
-        </h3>
-
-        <!-- Input para a data inicial do 3° quadrimestre -->
-        <label for="dataInicial3">Dia da liberação de licença:</label>
-        <input type="date" id="dataInicial3" class="inputData">
-
-        <!-- Resultado e mensagem de erro do 3° quadrimestre -->
-        <p id="resultado3" class="resultado"></p>
-        <p id="mensagemErro3" class="mensagemErro"></p>
-
-        <!-- Botão para calcular os dias do 3° quadrimestre -->
-        <button onclick="calcularDias(3, '2024-10-30')" class="calcularButton">Calcular</button>
-    </div>
-</div>
+    <!-- Espaçamento -->
     <br>
     <br>
     <br>
-    <!-- Rodapé -->
+
+    <!-- Rodapé da página -->
     <footer>
         <p>Em caso de dúvidas, envie um e-mail para desenvolvimentoeretenção@sis-it.com</p>
     </footer>
@@ -84,4 +87,5 @@
     <!-- Script JavaScript -->
     <script src="script.js"></script>
 </body>
+
 </html>

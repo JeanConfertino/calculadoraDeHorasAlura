@@ -1,17 +1,17 @@
 /*URL fonte*/
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@300;400&display=swap');
 /* Reset de margin e padding para o corpo da página */
 body {
-    font-family: "Montserrat", sans-serif; 
+    background-image: url('fundo_alura.jpg');
+    font-family: 'Inter', sans-serif; 
+    color: #fff;
     margin: 0;
     padding: 0;
 }
 
 /* Estilo para o cabeçalho */
 header {
-    background-color: #1a237e; /* Azul escuro */
-    color: #fff;
+    color: #ffffff;
     text-align: center;
     padding: 20px 0;
     margin-bottom: 20px;
@@ -27,11 +27,11 @@ header {
 /* Estilo para os quadrimestres */
 .quadrimestre {
     width: calc(33.33% - 20px); /* 33.33% para cada quadrimestre com 20px de espaço entre eles */
-    margin-bottom: 20px;
+    margin-bottom: 2px;
     padding: 20px;
     border: 1px solid #3949ab; /* Azul escuro mais claro */
     box-sizing: border-box; /* Adicione isso para corrigir possíveis problemas de layout */
-    border-radius: 10px; /* Adicione esta propriedade para bordas mais arredondadas */
+    border-radius: 15px; /* Adicione esta propriedade para bordas mais arredondadas */
     display: flex;
     flex-direction: column;
     align-items: center; /* Centraliza conteúdo verticalmente */
@@ -62,14 +62,16 @@ label {
     cursor: pointer;
     border-radius: 5px; /* Adicione esta propriedade para bordas mais arredondadas */
     align-self: center; /* Centraliza horizontalmente */
+    
 }
 
 /* Estilo para o rodapé */
 footer {
-    background-color: #1a237e; /* Azul escuro */
+    background-color: #1a227e00; /* Azul escuro */
     color: #fff;
     text-align: center;
     padding: 10px 0;
 }
 
 /* Adicione mais estilos conforme necessário */
+
