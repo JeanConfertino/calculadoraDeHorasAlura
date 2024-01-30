@@ -49,7 +49,8 @@ function calcularDias(quadrimestre) {
     var horas = calcularHoras(dias);
 
     // Exibe o resultado
-    document.getElementById('resultado' + quadrimestre).innerHTML = dias + ' dias de licença disponível para você neste quadrimestre. Com base nestes dias, você precisará cumprir com ' + horas + ' horas de cursos dentro da plataforma Alura.';
+    document.getElementById('resultado' + quadrimestre).innerHTML = 'Você está utilizando a licença ao longo de um período total de ' + dias + ' dias, e, portanto, precisa cumprir um mínimo de ' + horas + ' horas de cursos na plataforma Alura'
+
 }
 
 // Função para calcular as horas com base no número de dias restantes

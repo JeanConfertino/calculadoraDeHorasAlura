@@ -17,11 +17,6 @@ body {
     max-width: 800px;
 }
 
-.botaoCalcular {
-    margin: 20px auto;
-    display: block;
-}
-
 header {
     color: #fff; /* Cor do texto branco */
     padding: 20px; /* Espaçamento interno */
@@ -38,19 +33,42 @@ header {
 }
 
 .botaoCalcular {
-    /* Estilos específicos para botões de calcular */
+    margin: 20px auto;
+    display: block;
+    background-color: #8dff90; /* Cor de fundo verde */
+    color: #00117f; /* Cor do texto branca */
+    border: none; /* Remove a borda padrão */
+    padding: 10px 20px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+    padding: 10px 90px; /* Espaçamento interno aumentado horizontalmente */
+    text-decoration: none; /* Remove sublinhado */
+    display: flex; /* Ativa o flexbox */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    font-size: 11px; /* Tamanho da fonte */
+    font-weight: bold; /* Texto em negrito */
+    border-radius: 50px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor do mouse ao passar sobre o botão */
 }
 
+
 .inputData {
-    /* Estilos para inputs de data */
+    color: rgb(0, 24, 75); /* Texto branco para contrastar */
+    background-color: #ffffffde; /* Cor de fundo verde */
+    cursor: pointer; /* Cursor do mouse ao passar sobre o botão */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 5px 10px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+    padding: 5px 40px; /* Espaçamento interno aumentado horizontalmente */
 }
 
 .resultado {
-    /* Estilos para elementos que mostram os resultados */
+    color: rgba(246, 254, 0, 0.828); /* Texto branco para contrastar */
 }
 
 .mensagemErro {
-    /* Estilos para mensagens de erro */
+    color: rgb(255, 105, 105); /* Texto branco para contrastar */
 }
 
 .tituloQuadrimestre {
@@ -74,13 +92,20 @@ header {
 }
 
 .seletorQuadrimestre {
-    /* Estilos para seletor de quadrimestre */
+    color: rgb(0, 24, 75); /* Texto branco para contrastar */
+    background-color: #ffffffde; /* Cor de fundo verde */
+    cursor: pointer; /* Cursor do mouse ao passar sobre o botão */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 5px 10px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+    padding: 5px 40px; /* Espaçamento interno aumentado horizontalmente */
 }
 
 .logo {
     position: absolute; /* Define a posição absoluta */
     top: 0; /* Alinha ao topo */
-    left: 0; /* Alinha à esquerda */
+    right: 0; /* Alinha à esquerda */
     margin-right: 20px; /* Adiciona uma margem à direita para separar do título */
     width: 200px; /* Defina a largura desejada */
     height: auto; /* Mantém a proporção da imagem */
