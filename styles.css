@@ -1,77 +1,89 @@
-/*URL fonte*/
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@300;400&display=swap');
-/* Reset de margin e padding para o corpo da página */
 body {
-    background-image: url('fundo_alura.jpg');
-    font-family: Arial, sans-serif;
-    color: #fff;
-    margin: 0;
-    padding: 0;
-}
-
-/* Estilo para o cabeçalho */
-header {
-    color: #ffffff;
-    text-align: center;
-    padding: 20px 0;
-    margin-bottom: 10px;
-}
-
-/* Contêiner flexível para os quadrimestres */
-.quadrimestres-container {
-    display: flex;
-    justify-content: space-around; /* ou space-between, dependendo da preferência */
-    flex-wrap: wrap;
-}
-
-/* Estilo para os quadrimestres */
-.quadrimestre {
-    width: calc(33.33% - 15px); /* 33.33% para cada quadrimestre com 15px de espaço entre eles */
-    margin-bottom: 2px;
-    padding: 15px;
-    border: 1px solid #3949ab; /* Azul escuro mais claro */
-    box-sizing: border-box; /* Adicione isso para corrigir possíveis problemas de layout */
-    border-radius: 15px; /* Adicione esta propriedade para bordas mais arredondadas */
+    color: #f4f4f4;
+    font-family: Inter,sans-serif;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centraliza conteúdo verticalmente */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('fundo_alura.jpg');
+    background-size: cover; /* Para cobrir todo o fundo */
+    background-position: center; /* Para centralizar a imagem */
+    background-repeat: no-repeat; /* Para evitar repetição da imagem */
 }
 
-/* Estilo para os inputs e labels dentro dos quadrimestres */
-label {
+
+.containerGeral {
+    max-width: 800px;
+}
+
+.botaoCalcular {
+    margin: 20px auto;
     display: block;
-    margin-bottom: 10px;
+}
+
+header {
+    color: #fff; /* Cor do texto branco */
+    padding: 20px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Adicionando classes para personalização */
+.botaoPrincipal {
+    /* Estilos para botões principais */
+}
+
+.botaoSecundario {
+    /* Estilos para botões secundários */
+}
+
+.botaoCalcular {
+    /* Estilos específicos para botões de calcular */
 }
 
 .inputData {
-    width: 100%;
-    padding: 8px;
-    box-sizing: border-box;
-    margin-bottom: 10px;
+    /* Estilos para inputs de data */
 }
 
-.resultado, .mensagemErro {
-    margin-top: 10px;
+.resultado {
+    /* Estilos para elementos que mostram os resultados */
 }
 
-.calcularButton {
-    background-color: #1565c0; /* Azul escuro mais intenso */
-    color: #fff;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px; /* Adicione esta propriedade para bordas mais arredondadas */
-    align-self: center; /* Centraliza horizontalmente */
-    
+.mensagemErro {
+    /* Estilos para mensagens de erro */
 }
 
-/* Estilo para o rodapé */
-footer {
-    background-color: #1a227e00; /* Azul escuro */
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
+.tituloQuadrimestre {
+    /* Estilos para títulos de quadrimestre */
 }
 
-/* Adicione mais estilos conforme necessário */
+.infoQuadrimestre {
+    /* Estilos para informações de quadrimestre */
+}
+
+.labelData {
+    /* Estilos para labels de data */
+}
+
+.containerQuadrimestre {
+    /* Estilos para containers de quadrimestre */
+}
+
+.containerGeral {
+    /* Estilos para container geral */
+}
+
+.seletorQuadrimestre {
+    /* Estilos para seletor de quadrimestre */
+}
+
+.logo {
+    position: absolute; /* Define a posição absoluta */
+    top: 0; /* Alinha ao topo */
+    left: 0; /* Alinha à esquerda */
+    margin-right: 20px; /* Adiciona uma margem à direita para separar do título */
+    width: 200px; /* Defina a largura desejada */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
 

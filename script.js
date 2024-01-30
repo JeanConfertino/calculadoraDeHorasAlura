@@ -1,8 +1,25 @@
-function calcularDias(quadrimestre, dataFinalStr) {
+// Função para mostrar apenas o quadrimestre selecionado
+function mostrarQuadrimestre() {
+    var seletorQuadrimestre = document.getElementById('seletorQuadrimestre');
+    var quadrimestreSelecionado = parseInt(seletorQuadrimestre.value);
+
+    // Oculta todos os quadrimestres
+    var quadrimestres = document.querySelectorAll('.quadrimestre');
+    quadrimestres.forEach(function(quadrimestre) {
+        quadrimestre.style.display = 'none';
+    });
+
+    // Mostra apenas o quadrimestre selecionado
+    var quadrimestreSelecionadoElement = document.getElementById('quadrimestre' + quadrimestreSelecionado);
+    quadrimestreSelecionadoElement.style.display = 'block';
+}
+
+// Função para calcular os dias e horas do quadrimestre selecionado
+function calcularDias(quadrimestre) {
     var dataInicialInput = document.getElementById('dataInicial' + quadrimestre);
     var mensagemErroElement = document.getElementById('mensagemErro' + quadrimestre);
     var dataInicial = new Date(dataInicialInput.value);
-    var dataFinalFixa = new Date(dataFinalStr);
+    var dataFinalFixa = new Date(getFinalQuadrimestre(quadrimestre));
     var mensagemErro = '';
 
     // Verifica se a data inicial foi selecionada
@@ -32,7 +49,7 @@ function calcularDias(quadrimestre, dataFinalStr) {
     var horas = calcularHoras(dias);
 
     // Exibe o resultado
-    document.getElementById('resultado' + quadrimestre).innerHTML = dias + ' dias de licença disponível para você nestre quadrimestre. Com base nestes dias, você precisará cumprir com ' + horas + ' horas de cursos dentro da plataforma Alura.';
+    document.getElementById('resultado' + quadrimestre).innerHTML = dias + ' dias de licença disponível para você neste quadrimestre. Com base nestes dias, você precisará cumprir com ' + horas + ' horas de cursos dentro da plataforma Alura.';
 }
 
 // Função para calcular as horas com base no número de dias restantes
@@ -54,12 +71,34 @@ function calcularHoras(dias) {
 function getInicioQuadrimestre(quadrimestre) {
     switch (quadrimestre) {
         case 1:
-            return '10/31/2023'; // essa regra tá bugada, deve-se inverter o mês por dia
+            return '2023-11-01';
         case 2:
-            return '01/03/2024';
+            return '2024-03-01';
         case 3:
-            return '01/07/2024';
+            return '2024-07-01';
         default:
             return '';
     }
 }
+
+// Função auxiliar para obter a data final do quadrimestre
+function getFinalQuadrimestre(quadrimestre) {
+    switch (quadrimestre) {
+        case 1:
+            return '2024-02-29';
+        case 2:
+            return '2024-06-30';
+        case 3:
+            return '2024-10-30';
+        default:
+            return '';
+    }
+}
+
+// Função para inicializar a página
+function inicializarPagina() {
+    mostrarQuadrimestre();
+}
+
+// Chamada para inicializar a página
+inicializarPagina();
