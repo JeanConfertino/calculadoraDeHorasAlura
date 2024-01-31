@@ -18,6 +18,7 @@ function mostrarQuadrimestre() {
 function calcularDias(quadrimestre) {
     var dataInicialInput = document.getElementById('dataInicial' + quadrimestre);
     var mensagemErroElement = document.getElementById('mensagemErro' + quadrimestre);
+    var resultadoElement = document.getElementById('resultado' + quadrimestre);
     var dataInicial = new Date(dataInicialInput.value);
     var dataFinalFixa = new Date(getFinalQuadrimestre(quadrimestre));
     var mensagemErro = '';
@@ -38,6 +39,7 @@ function calcularDias(quadrimestre) {
     // Se houver uma mensagem de erro, exibe-a
     if (mensagemErro !== '') {
         mensagemErroElement.innerHTML = mensagemErro;
+        resultadoElement.innerHTML = ''; // Limpa o resultado
         return;
     } else {
         mensagemErroElement.innerHTML = '';
@@ -49,8 +51,7 @@ function calcularDias(quadrimestre) {
     var horas = calcularHoras(dias);
 
     // Exibe o resultado
-    document.getElementById('resultado' + quadrimestre).innerHTML = 'Você está utilizando a licença ao longo de um período total de ' + dias + ' dias, e, portanto, precisa cumprir um mínimo de ' + horas + ' horas de cursos na plataforma Alura'
-
+    resultadoElement.innerHTML = 'Você está utilizando a licença ao longo de um período total de ' + dias + ' dias, e, portanto, precisa cumprir um mínimo de ' + horas + ' horas de cursos na plataforma Alura';
 }
 
 // Função para calcular as horas com base no número de dias restantes

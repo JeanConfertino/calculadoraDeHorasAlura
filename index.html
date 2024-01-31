@@ -14,84 +14,84 @@
 </head>
 <body>
 <header>
-    <h1>ALURA | Calculadora de Utilização</h1>
+    <h1 class="tituloPrincipal">ALURA | Calculadora de Utilização</h1>
 </header>
 
 <!-- Restante do seu HTML aqui -->
-
-<p>Para saber quantos dias você possui até o momento de utilização da licença Alura no quadrimestre atual <br> e quantas horas você precisará cumprir até o final do período, preencha as informações abaixo:</p>
-<!-- Seletor de quadrimestre -->
-<br>
-<div class="containerSelecaoQuadrimestre">
+<div class="containerTexto">
+    <p>Para saber quantos dias você possui até o momento de utilização da licença Alura no quadrimestre atual <br> e quantas horas você precisará cumprir até o final do período, preencha as informações abaixo:</p>
     <!-- Seletor de quadrimestre -->
-    <select id="seletorQuadrimestre" class="seletorQuadrimestre" onchange="mostrarQuadrimestre()">
-        <option value="1">1º quadrimestre - período de utilização: xx/xx/xx até xx/xx/xx</option>
-        <option value="2">2º quadrimestre - período de utilização: xx/xx/xx até xx/xx/xx</option>
-        <option value="3">3º quadrimestre - período de utilização: xx/xx/xx até xx/xx/xx</option>
-    </select>
+    <br>
+    <div class="containerSelecaoQuadrimestre">
+        <!-- Seletor de quadrimestre -->
+        <select id="seletorQuadrimestre" class="seletorQuadrimestre" onchange="mostrarQuadrimestre()">
+            <option value="1">1º quadrimestre - período de utilização: xx/xx/xx até xx/xx/xx</option>
+            <option value="2">2º quadrimestre - período de utilização: xx/xx/xx até xx/xx/xx</option>
+            <option value="3">3º quadrimestre - período de utilização: xx/xx/xx até xx/xx/xx</option>
+        </select>
+    </div>
+    <br>
+    <!-- Container para os quadrimestres -->
+    <div id="quadrimestres-container" class="containerGeral">
+        <!-- Quadrimestre 1 -->
+        <div class="quadrimestre containerQuadrimestre" id="quadrimestre1">
+            <!-- Título e informações do quadrimestre -->
+            <h3 class="tituloQuadrimestre">1° quadrimestre</h3>
+
+            <!-- Input para a data inicial do 1° quadrimestre -->
+            <p><label for="dataInicial1" class="labelData">Selecione a data exata em que sua licença foi liberada/ renovada:</label>
+            <input type="date" id="dataInicial1" class="inputData">
+
+            <!-- Botão para calcular os dias do 1° quadrimestre -->
+            <button onclick="calcularDias(1)" class="botaoCalcular">CALCULAR</button>
+
+            <!-- Resultado e mensagem de erro do 1° quadrimestre -->
+            <p id="resultado1" class="resultado"></p>
+            <p id="mensagemErro1" class="mensagemErro"></p>
+        </div>
+
+        <!-- Quadrimestre 2 -->
+        <div class="quadrimestre containerQuadrimestre" id="quadrimestre2">
+            <!-- Título e informações do quadrimestre -->
+            <h3 class="tituloQuadrimestre">2° quadrimestre</h3>
+
+            <!-- Input para a data inicial do 2° quadrimestre -->
+            <label for="dataInicial2" class="labelData">Selecione a data exata em que sua licença foi liberada/ renovada:</label>
+            <input type="date" id="dataInicial2" class="inputData">
+
+            <!-- Botão para calcular os dias do 2° quadrimestre -->
+            <button onclick="calcularDias(2)" class="botaoCalcular">CALCULAR</button>
+
+            <!-- Resultado e mensagem de erro do 2° quadrimestre -->
+            <p id="resultado2" class="resultado"></p>
+            <p id="mensagemErro2" class="mensagemErro"></p>
+        </div>
+
+        <!-- Quadrimestre 3 -->
+        <div class="quadrimestre containerQuadrimestre" id="quadrimestre3">
+            <!-- Título e informações do quadrimestre -->
+            <h3 class="tituloQuadrimestre">3° quadrimestre</h3>
+
+            <!-- Input para a data inicial do 3° quadrimestre -->
+            <label for="dataInicial3" class="labelData">Selecione a data exata em que sua licença foi liberada/ renovada:</label>
+            <input type="date" id="dataInicial3" class="inputData">
+
+            <!-- Botão para calcular os dias do 3° quadrimestre -->
+            <button onclick="calcularDias(3)" class="botaoCalcular">CALCULAR</button>
+
+            <!-- Resultado e mensagem de erro do 3° quadrimestre -->
+            <p id="resultado3" class="resultado"></p>
+            <p id="mensagemErro3" class="mensagemErro"></p>
+        </div>
+    </div>
 </div>
-<br>
-<!-- Container para os quadrimestres -->
-<div id="quadrimestres-container" class="containerGeral">
-    <!-- Quadrimestre 1 -->
-    <div class="quadrimestre containerQuadrimestre" id="quadrimestre1">
-        <!-- Título e informações do quadrimestre -->
-        <h3 class="tituloQuadrimestre">1° quadrimestre</h3>
-
-        <!-- Input para a data inicial do 1° quadrimestre -->
-        <p><label for="dataInicial1" class="labelData">Selecione a data exata em que sua licença foi liberada/ renovada:</label>
-        <input type="date" id="dataInicial1" class="inputData">
-
-        <!-- Resultado e mensagem de erro do 1° quadrimestre -->
-        <p id="resultado1" class="resultado"></p>
-        <p id="mensagemErro1" class="mensagemErro"></p>
-
-        <!-- Botão para calcular os dias do 1° quadrimestre -->
-        <button onclick="calcularDias(1, '2024-02-29')" class="botaoCalcular">CALCULAR</button>
-    </div>
-
-    <!-- Quadrimestre 2 -->
-    <div class="quadrimestre containerQuadrimestre" id="quadrimestre2">
-        <!-- Título e informações do quadrimestre -->
-        <h3 class="tituloQuadrimestre">2° quadrimestre</h3>
-
-        <!-- Input para a data inicial do 2° quadrimestre -->
-        <label for="dataInicial2" class="labelData">Selecione a data exata em que sua licença foi liberada/ renovada:</label>
-        <input type="date" id="dataInicial2" class="inputData">
-
-        <!-- Resultado e mensagem de erro do 2° quadrimestre -->
-        <p id="resultado2" class="resultado"></p>
-        <p id="mensagemErro2" class="mensagemErro"></p>
-
-        <!-- Botão para calcular os dias do 2° quadrimestre -->
-        <button onclick="calcularDias(2, '2024-06-30')" class="botaoCalcular">CALCULAR</button>
-    </div>
-
-    <!-- Quadrimestre 3 -->
-    <div class="quadrimestre containerQuadrimestre" id="quadrimestre3">
-        <!-- Título e informações do quadrimestre -->
-        <h3 class="tituloQuadrimestre">3° quadrimestre</h3>
-
-        <!-- Input para a data inicial do 3° quadrimestre -->
-        <label for="dataInicial3" class="labelData">Selecione a data exata em que sua licença foi liberada/ renovada:</label>
-        <input type="date" id="dataInicial3" class="inputData">
-
-        <!-- Resultado e mensagem de erro do 3° quadrimestre -->
-        <p id="resultado3" class="resultado"></p>
-        <p id="mensagemErro3" class="mensagemErro"></p>
-
-        <!-- Botão para calcular os dias do 3° quadrimestre -->
-        <button onclick="calcularDias(3, '2024-10-30')" class="botaoCalcular">CALCULAR</button>
-    </div>
-</div>
-
-
+<p class="mensagemInferior">Para saber como consultar as suas horas realizadas até o momento na plataforma, <a href="https://cursos.alura.com.br/user/">clique aqui</a>.</p>
 <!-- Rodapé da página -->
 <footer>
     <p>Em caso de dúvidas, envie um e-mail para desenvolvimentoeretencao@sis-it.com</p>
 </footer>
 
 <!-- Script JavaScript -->
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
