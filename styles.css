@@ -63,6 +63,7 @@ header {
     padding: 5px 10px; /* Espaçamento interno */
     text-align: center; /* Centraliza o texto */
     padding: 5px 40px; /* Espaçamento interno aumentado horizontalmente */
+    font-size: 16px;
 }
 
 .resultado {
@@ -94,6 +95,8 @@ header {
 }
 
 .seletorQuadrimestre {
+    margin: 1px auto;
+    display: block;
     color: rgb(0, 24, 75); /* Texto branco para contrastar */
     background-color: #ffffffde; /* Cor de fundo verde */
     cursor: pointer; /* Cursor do mouse ao passar sobre o botão */
@@ -101,7 +104,8 @@ header {
     border-radius: 5px; /* Bordas arredondadas */
     padding: 5px 10px; /* Espaçamento interno */
     text-align: center; /* Centraliza o texto */
-    padding: 5px 40px; /* Espaçamento interno aumentado horizontalmente */
+    padding: 10px 90px; /* Espaçamento interno aumentado horizontalmente */
+    font-size: 16px;
 }
 
 .logo {
@@ -129,3 +133,4 @@ header {
     border-radius: 10px; /* Bordas arredondadas */
     background-image: linear-gradient(to bottom, rgba(0, 24, 75, 0.336), rgba(0, 75, 166, 0.212), rgb(0, 24, 75, 0.336)); /* Degradê com múltiplos pontos focais */
 }
+
