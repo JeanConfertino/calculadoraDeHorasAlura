@@ -127,6 +127,7 @@ header {
 }
 
 .containerTexto {
+    text-align: center; /* Centraliza o texto */
     border: 1px solid #00b7ff; /* Cor e espessura da borda */
     padding: 10px; /* Espaçamento interno para o conteúdo */
     margin-bottom: 20px; /* Espaçamento inferior para separar do próximo elemento */
