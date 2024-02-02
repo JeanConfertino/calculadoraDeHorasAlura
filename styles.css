@@ -55,6 +55,7 @@ header {
 
 
 .inputData {
+    font-family: 'Arial Rounded MT Bold', sans-serif; /* Fonte mais arredondada e grossa */
     color: rgb(0, 24, 75); /* Texto branco para contrastar */
     background-color: #ffffffde; /* Cor de fundo verde */
     cursor: pointer; /* Cursor do mouse ao passar sobre o botão */
