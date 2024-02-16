@@ -51,7 +51,7 @@ function calcularDias(quadrimestre) {
     var horas = calcularHoras(dias);
 
     // Exibe o resultado
-    resultadoElement.innerHTML =  'Com ' + dias + ' dias de licença diponível no quadrimestre, portanto, você precisa cumprir um mínimo de ' + horas + ' horas de cursos na plataforma Alura.';
+    resultadoElement.innerHTML =  'Com ' + dias + ' dias de licença diponível no quadrimestre, você precisa cumprir um mínimo de ' + horas + ' horas de cursos na plataforma Alura.';
 }
 
 // Função para calcular as horas com base no número de dias restantes
